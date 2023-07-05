@@ -50,7 +50,7 @@
     overflow: hidden;
     animation: writing 6s steps(4, Jump-none) 0s infinite forwards;
     -webkit-animation: writing 6s steps(4, Jump-none) 0s infinite forwards;
-}
+    }
 .footer {
     position: absolute;
     bottom: 2px;
