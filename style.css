@@ -23,6 +23,15 @@
     70%, 80%, 90% { text-shadow: red -3px 2px, blue 0 -2px, green 3px 2px; }
     75%, 85% { text-shadow: red -2px 2px, blue 0 -3px, green 2px 2px; }
     }
+@keyframes writing {
+    from { width: 0px; }
+    to { width: 115.2px; }
+    }
+@-webkit-keyframes writing {
+    from { width: 0px; }
+    to { width: 115.2px; }
+    }
+
 .display {
     position: absolute;
     top: 50%;
@@ -31,9 +40,17 @@
     color: white;
     font-size: 64px;
     font-family: 'Courier New', Courier, monospace;
-    animation: gliching 8s ease 0s infinite forwards;
-    -webkit-animation: gliching 8s ease 0s infinite forwards;
+    animation: gliching 10s ease 0s infinite forwards;
+    -webkit-animation: gliching 10s ease 0s infinite forwards;
     }
+.dots {
+    position: fixed;
+    top: 0;
+    left: 300px;
+    overflow: hidden;
+    animation: writing 6s steps(4, Jump-none) 0s infinite forwards;
+    -webkit-animation: writing 6s steps(4, Jump-none) 0s infinite forwards;
+}
 .footer {
     position: absolute;
     bottom: 2px;
