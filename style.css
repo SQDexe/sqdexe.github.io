@@ -1,0 +1,44 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 versions
+*/
+
+@keyframes gliching {
+    from, to,
+    19%, 31%,
+    69%, 91% { text-shadow: none; }
+    20%, 25%, 30% { text-shadow: red -3px 0, cyan 3px 0; }
+    23%, 27% { text-shadow: red -2px 0, cyan 2px 0; }
+    70%, 80%, 90% { text-shadow: red -3px 2px, blue 0 -2px, green 3px 2px; }
+    75%, 85% { text-shadow: red -2px 2px, blue 0 -3px, green 2px 2px; }
+    }
+@-webkit-keyframes gliching {
+    from, to,
+    19%, 31%,
+    69%, 91% { text-shadow: none; }
+    20%, 25%, 30% { text-shadow: red -3px 0, cyan 3px 0; }
+    23%, 27% { text-shadow: red -2px 0, cyan 2px 0; }
+    70%, 80%, 90% { text-shadow: red -3px 2px, blue 0 -2px, green 3px 2px; }
+    75%, 85% { text-shadow: red -2px 2px, blue 0 -3px, green 2px 2px; }
+    }
+.display {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    color: white;
+    font-size: 64px;
+    font-family: 'Courier New', Courier, monospace;
+    animation: gliching 8s ease 0s infinite forwards;
+    -webkit-animation: gliching 8s ease 0s infinite forwards;
+    }
+.footer {
+    position: absolute;
+    bottom: 2px;
+    right: 2px;
+    color: white;
+    font-size: 12px;
+    font-family: 'Courier New', Courier, monospace;
+    }
