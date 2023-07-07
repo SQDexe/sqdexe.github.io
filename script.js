@@ -1,7 +1,7 @@
 //$.getJSON("https://api.github.com/users/SQDexe/repos", null, (data, textStatus, jqXHR) => {console.log(data)}).fail((jqxhr,settings,ex)=> {console.log("fail")});
 const vars = {
     display: $(".dots"),
-    counter: 0
+    counter: 1
     }
 setInterval(() => {
     if (3 < vars.counter) vars.counter = 0;
