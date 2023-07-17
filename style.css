@@ -5,6 +5,14 @@
 * Browsers: last 4 versions
 */
 
+@keyframes dots {
+    from { width: 0 }
+    to { width: 16vmin }
+    }
+@-webkit-keyframes dots {
+    from { width: 0 }
+    to { width: 16vmin }
+    }
 @keyframes gliching {
     from, to,
     15%, 35%,
@@ -26,14 +34,24 @@
 
 .display {
     position: absolute;
+    display: grid;
+    place-items: center;
     top: 50%;
     left: 50%;
     translate: -50% -50%;
     font-size: 15vmin;
+    text-align: center;
     animation: gliching 10s ease 0s infinite forwards;
     -webkit-animation: gliching 10s ease 0s infinite forwards;
     }
-.dots { font-size: 7.5vmin; }
+.dots {
+    width: 0;
+    font-size: 7.5vmin;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: dots 6s steps(4, end) 0s infinite forwards;
+    -webkit-animation: dots 6s steps(4, end) 0s infinite forwards;
+    }
 .footer {
     position: absolute;
     bottom: 0.2rem;
