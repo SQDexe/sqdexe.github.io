@@ -63,10 +63,9 @@ html { font-size: 62.5%; }
     animation: dots 6s steps(4, end) 0s infinite forwards;
     -webkit-animation: dots 6s steps(4, end) 0s infinite forwards;
     }
-
 .footer {
-    position: absolute;
+    position: fixed;
     bottom: 0.2rem;
     right: 0.2rem;
-    font-size: 1.5vmin;
+    font-size: 1.2rem;
     }
