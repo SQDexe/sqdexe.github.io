@@ -7,11 +7,11 @@
 
 @keyframes dots {
     from { width: 0 }
-    to { width: 16vmin }
+    to { width: 17vmin }
     }
 @-webkit-keyframes dots {
     from { width: 0 }
-    to { width: 16vmin }
+    to { width: 17vmin }
     }
 @keyframes gliching {
     from, to,
