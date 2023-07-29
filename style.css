@@ -6,12 +6,12 @@
 */
 
 @keyframes dots {
-    from { width: 0 }
-    to { width: 17vmin }
+    from { width: 0px }
+    to { width: 4ch }
     }
 @-webkit-keyframes dots {
-    from { width: 0 }
-    to { width: 17vmin }
+    from { width: 0px }
+    to { width: 4ch }
     }
 @keyframes gliching {
     from, to,
@@ -40,7 +40,10 @@
     -webkit-user-select: none;
     }
 body, 
-html { height: 100%; font-size: 62.5%; }
+html {
+    height: 100%;
+    font-size: 62.5%;
+    }
 
 .title-card {
     width: 100%;
@@ -56,11 +59,11 @@ html { height: 100%; font-size: 62.5%; }
     -webkit-animation: gliching 10s ease 0s infinite forwards;
     }
 .dots {
-    width: 0;
+    width: 0px;
     font-size: 7.5vmin;
     overflow: hidden;
     white-space: nowrap;
-    animation: dots 6s steps(4, end) 0s infinite forwards;
+    animation: dots 6s steps(3, end) 0s infinite forwards;
     -webkit-animation: dots 6s steps(4, end) 0s infinite forwards;
     }
 .footer {
