@@ -63,7 +63,7 @@ html {
     font-size: 7.5vmin;
     overflow: hidden;
     white-space: nowrap;
-    animation: dots 6s steps(3, end) 0s infinite forwards;
+    animation: dots 6s steps(4, end) 0s infinite forwards;
     -webkit-animation: dots 6s steps(4, end) 0s infinite forwards;
     }
 .footer {
