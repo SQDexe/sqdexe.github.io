@@ -3,3 +3,15 @@ lang = [
     "en",
     "pl"
     ]
+
+const load = () => {
+    for (let ln of lang) {
+        $(".lang-menu")
+            .append($("<button></button>")
+                .text(ln.toUpperCase())
+                .addClass("button")
+                .addClass("lang-select")
+                .attr("data-lang-value", ln));
+        }
+    }
+$(document).ready(load);
