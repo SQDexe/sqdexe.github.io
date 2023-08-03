@@ -39,4 +39,4 @@ const lang = Object.freeze([
         "code": "ru",
         "nativeName": "Русский"
     }
-]);
+    ].map(elem => Object.freeze(elem)));
