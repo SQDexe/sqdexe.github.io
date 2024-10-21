@@ -1,25 +1,26 @@
 'use strict';
 //$.getJSON('https://api.github.com/users/SQDexe/repos', null, (data, textStatus, jqXHR) => {console.log(data)}).fail((jqxhr,settings,ex)=> {console.log('fail')});
-const vars = {};
+const VARS = {};
 
-const loadButtons = () => {
+function loadButtons() {
     /* Iters over list of languages, and prepares buttons */
-    for (let l of lang) 
+    for (let l of LANG) 
         $('.lang-menu')
             .append($('<button>')
                 .text(l.code.toUpperCase())
                 .addClass('button')
                 .addClass('lang-select')
-                .attr('data-lang-value', l.code));
+                .attr('data-lang-value', l.code)
+                );
     }
-const setLang = l => {
-    let selected = lang.find(e => e.code.toLowerCase() == l.toLowerCase());
-    $('[data-lang-translate]').each((_, e) => e.text(selected[$(e).attr('data-lang-translate')]));
+function setLang(l) {
+    const SELECTED = LANG.find(e => e.code.toLowerCase() == l.toLowerCase());
+    $('[data-lang-translate]').each((_, e) => e.text(SELECTED[$(e).attr('data-lang-translate')]));
     }
-const load = () => {
+function load() {
     /* Executes preparatory functions */       
     loadButtons();
-    setLang(lang[2].code);
+    setLang(LANG[2].code);
     
     /* Binds events */
     $('.lang-menu').click(e => {

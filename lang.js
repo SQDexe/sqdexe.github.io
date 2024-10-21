@@ -1,4 +1,5 @@
-const lang = Object.freeze([
+'use strict';
+const LANG = Object.freeze([
     {
         "name": "Danish",
         "code": "da",
